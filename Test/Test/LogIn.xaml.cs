@@ -19,7 +19,7 @@ namespace Test
 
         private void OnSignUpClicked(Object sender , EventArgs e)
         {
-            DisplayAlert("Sign Up", "Sign Up Efectuado com sucesso", "Continuar");        }
+            Navigation.PushModalAsync(new SignUp());        }
 
         private void OnLoginClicked(Object sender, EventArgs e)
         {
