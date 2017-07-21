@@ -3,8 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Test.Index">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Index" />
-        </StackLayout>
+        <AbsoluteLayout>
+            <Button Text="Perfil"
+                     Style="{StaticResource indexButton}"
+                    AbsoluteLayout.LayoutBounds=".5,0,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
+            <Button Text="Consultas"
+                     Style="{StaticResource indexButton}"
+                     HorizontalOptions="Start"
+                    AbsoluteLayout.LayoutBounds="0,.6,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
+            <Button Text="Cartão"
+                     Style="{StaticResource indexButton}"
+                     HorizontalOptions="Start"
+                    AbsoluteLayout.LayoutBounds="0,.3,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
+            <Button Text="Lojas"
+                     Style="{StaticResource indexButton}"
+                     HorizontalOptions="End"
+                    AbsoluteLayout.LayoutBounds="1,.6,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
+            <Button Text="Compras"
+                     Style="{StaticResource indexButton}"
+                     HorizontalOptions="End"
+                    AbsoluteLayout.LayoutBounds="1,.3,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
+            <Button Text="Log In"
+                    Clicked="IndexLogIn_Clicked"
+                     Style="{StaticResource indexButton}"
+                    AbsoluteLayout.LayoutBounds=".5,1,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

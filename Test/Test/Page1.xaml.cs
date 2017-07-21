@@ -10,16 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace Test
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Index : ContentPage
+	public partial class Page1 : ContentPage
 	{
-		public Index ()
+		public Page1 ()
 		{
 			InitializeComponent ();
 		}
-
-        private void IndexLogIn_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushModalAsync(new LogIn());
-        }
-    }
+      
+	}
 }

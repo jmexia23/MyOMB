@@ -2,9 +2,25 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Test.App">
-	<Application.Resources>
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="blueButton" TargetType="Button">
+              <Setter Property="TextColor" Value="White" />
+              <Setter Property="BackgroundColor" Value="DodgerBlue" />
+            </Style>
+            
+            <Style x:Key="lightBlueButton" TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+            </Style>
 
-		<!-- Application resource dictionary -->
+            <Style x:Key="indexButton" TargetType="Button">
+                <Setter Property="TextColor" Value="LightSkyBlue"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="Margin" Value="0"/>
+            </Style>
+        </ResourceDictionary>
 
 	</Application.Resources>
 </Application>

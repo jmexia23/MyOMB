@@ -9,9 +9,9 @@
             <Entry x:Name="usernameEntry" Placeholder="Insira o seu nº de telemóvel"/>
             <Label Text="Password"/>
             <Entry x:Name="Password" Placeholder="Insira o seu nº de cliente" IsPassword="True"/>
-            <Button Text="Login" Clicked="OnLoginClicked" BackgroundColor="DodgerBlue" Margin="100" TextColor="White"/>
+            <Button Text="Login" Clicked="OnLoginClicked" Style="{StaticResource blueButton}" Margin="100"/>
             <Label x:Name="messageLabel"/>
-            <Button Text="Sign Up" Clicked="OnSignUpClicked" BackgroundColor="LightSkyBlue" Margin="100" TextColor="White"/>
+            <Button Text="Sign Up" Clicked="OnSignUpClicked" Style="{StaticResource lightBlueButton}" Margin="100"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
