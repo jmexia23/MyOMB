@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Perfil">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="profileLabels" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+   
+    <ContentPage.Content>
+        <StackLayout>
+            <Label  Text="Nome:" />
+            <Label   x:Name="profileName" Text="Nome" Style="{StaticResource profileLabels}" />
+            <Label Text="Nº de telemóvel:" />
+            <Label  x:Name="profilePhone" Text="Telemóvel" Style="{StaticResource profileLabels}" />
+            <Label  Text="Nº de cliente:" />
+            <Label   x:Name="profileClient"  Text="Cliente" Style="{StaticResource profileLabels}"/>
+            <Button Text="Editar" Style="{StaticResource blueButton}" VerticalOptions="End" Clicked="Editar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -21,5 +21,30 @@ namespace Test
         {
             Navigation.PushModalAsync(new LogIn());
         }
+
+        private void IndexPerfil_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Perfil());
+        }
+
+        private void IndexCompras_Clicked (object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Compras());
+        }
+
+        private void IndexCartao_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Cartão());
+        }
+
+        private void IndexConsultas_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Consultas());
+        }
+
+        private void IndexLojas_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Lojas());
+        }
     }
 }

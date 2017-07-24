@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.EditarPerfil">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Primeiro Nome" />
+            <Entry x:Name="FirstNameEdit" Placeholder="Insira o seu primeiro nome"/>
+            <Label Text="Último Nome" />
+            <Entry x:Name="LastNameEdit" Placeholder="Insira o seu último nome"/>
+            <Label Text="Username"/>
+            <Entry x:Name="NewUsernameEdit" Placeholder="Insira o seu nº de telemóvel"/>
+            <Label Text="Password"/>
+            <Entry x:Name="NewPasswordEdit" Placeholder="Insira o seu nº de cliente"/>
+            <Button Text="Alterar" Clicked="Alterar_Clicked" BackgroundColor="DodgerBlue" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,38 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Test.Index"
-             BackgroundImage="">
+             x:Class="Test.Compras">
     <ContentPage.Content>
         <AbsoluteLayout>
-            <Button Text="Perfil"
-                    Clicked="IndexPerfil_Clicked"
-                     Style="{StaticResource indexButton}"
-                    AbsoluteLayout.LayoutBounds=".5,0,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Consultas"
-                    Clicked="IndexConsultas_Clicked"
+            <Button Text="Lentes de Contacto"
+                    Clicked="link_Clicked"
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="Start"
                     AbsoluteLayout.LayoutBounds="0,.6,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Cartão"
-                    Clicked="IndexCartao_Clicked"
+            <Button Text="Produtos"
+                    Clicked="link_Clicked"
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="Start"
                     AbsoluteLayout.LayoutBounds="0,.3,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Lojas"
-                    Clicked="IndexLojas_Clicked"
+            <Button Text="Óculos de Sol"
+                    Clicked="link_Clicked"
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="End"
                     AbsoluteLayout.LayoutBounds="1,.6,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Compras"
-                    Clicked="IndexCompras_Clicked"
+            <Button Text="Campanhas"
+                    Clicked="link_Clicked"
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="End"
                     AbsoluteLayout.LayoutBounds="1,.3,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Log In"
-                    Clicked="IndexLogIn_Clicked"
-                     Style="{StaticResource indexButton}"
-                     AbsoluteLayout.LayoutBounds=".5,1,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
