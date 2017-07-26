@@ -20,6 +20,11 @@
                 <Setter Property="BorderColor" Value="Transparent"/>
                 <Setter Property="Margin" Value="0"/>
             </Style>
+            <Style x:Key="listButton" TargetType="Button">
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+            </Style>
         </ResourceDictionary>
 
 	</Application.Resources>

@@ -5,34 +5,37 @@
              BackgroundImage="">
     <ContentPage.Content>
         <AbsoluteLayout>
-            <Button Text="Perfil"
+            <Button Text="Nome"
+                    x:Name="IndexBar"
+                    Style="{ StaticResource blueButton}"
+                    HorizontalOptions= "Fill"
+                    FontSize="Small"
                     Clicked="IndexPerfil_Clicked"
-                     Style="{StaticResource indexButton}"
-                    AbsoluteLayout.LayoutBounds=".5,0,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Consultas"
-                    Clicked="IndexConsultas_Clicked"
-                     Style="{StaticResource indexButton}"
-                     HorizontalOptions="Start"
-                    AbsoluteLayout.LayoutBounds="0,.6,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
+                   AbsoluteLayout.LayoutBounds=".5,0,1,.06" AbsoluteLayout.LayoutFlags="All"/>
+            <Button Text="MyOMB"
+                    x:Name="IndexMyOMB"                    
+                    Clicked="IndexLojas_Clicked"
+                    Style="{StaticResource indexButton}"
+                    HorizontalOptions="Start"
+                   AbsoluteLayout.LayoutBounds="0,.6,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
             <Button Text="Cartão"
+                    x:Name="IndexCartao"
                     Clicked="IndexCartao_Clicked"
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="Start"
                     AbsoluteLayout.LayoutBounds="0,.3,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Lojas"
+            <Button Text="Mundo OMB"
+                    x:Name="IndexLojas"
                     Clicked="IndexLojas_Clicked"
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="End"
                     AbsoluteLayout.LayoutBounds="1,.6,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
             <Button Text="Compras"
+                    x:Name="IndexCompras"
                     Clicked="IndexCompras_Clicked"
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="End"
                     AbsoluteLayout.LayoutBounds="1,.3,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Log In"
-                    Clicked="IndexLogIn_Clicked"
-                     Style="{StaticResource indexButton}"
-                     AbsoluteLayout.LayoutBounds=".5,1,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -19,6 +19,8 @@
             <Label  x:Name="profilePhone" Text="Telemóvel" Style="{StaticResource profileLabels}" />
             <Label  Text="Nº de cliente:" />
             <Label   x:Name="profileClient"  Text="Cliente" Style="{StaticResource profileLabels}"/>
+            <Label  Text="Email:" />
+            <Label   x:Name="profileEmail"  Text="email@exemplo.com" Style="{StaticResource profileLabels}"/>
             <Button Text="Editar" Style="{StaticResource blueButton}" VerticalOptions="End" Clicked="Editar_Clicked"/>
         </StackLayout>
     </ContentPage.Content>

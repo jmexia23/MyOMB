@@ -17,10 +17,7 @@ namespace Test
 			InitializeComponent ();
 		}
 
-        private void IndexLogIn_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushModalAsync(new LogIn());
-        }
+
 
         private void IndexPerfil_Clicked(object sender, EventArgs e)
         {

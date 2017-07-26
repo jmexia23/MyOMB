@@ -16,5 +16,16 @@ namespace Test
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void LojasIndice_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new LojasIndice());
+        }
+
+        private void Vantagens_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Vantagens());
+        }
+    }
+
 }

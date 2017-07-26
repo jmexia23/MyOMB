@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Test
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Cartão : ContentPage
+	public partial class LojasIndice : ContentPage
 	{
-		public Cartão ()
+		public LojasIndice ()
 		{
 			InitializeComponent ();
 		}
