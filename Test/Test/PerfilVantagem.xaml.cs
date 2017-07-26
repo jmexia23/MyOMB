@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Test
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Vantagens : ContentPage
+	public partial class PerfilVantagem : ContentPage
 	{
-		public Vantagens ()
+		public PerfilVantagem ()
 		{
 			InitializeComponent ();
-            Lista.ItemsSource = IndiceVantagens.Lista;
-        }
+		}
 	}
 }

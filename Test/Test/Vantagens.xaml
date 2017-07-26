@@ -15,7 +15,8 @@
                             <StackLayout Orientation="Horizontal"
                                          VerticalOptions="Fill">
                                 <Button Text="{Binding Nome}" 
-                                        Style="{StaticResource listButton}"/>
+                                        Style="{StaticResource listButton}"
+                                        Clicked="Vantagem_Clicked"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
