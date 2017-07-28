@@ -15,7 +15,7 @@ namespace Test
         public Parceiros()
         {
             InitializeComponent();
-            listP.ItemsSource = IndiceParceiros.ListaP; ;
+            listP.ItemsSource = IndiceParceiros.ListaP;
         }
 
         private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)

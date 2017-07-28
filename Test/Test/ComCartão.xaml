@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.ComCartão">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightSkyBlue">
+            <Label Text="Cartão OMB"
+                    Style="{ StaticResource blueLabel}"
+                    HorizontalOptions= "Fill"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Cartão: 345565578"
+                   x:Name="CardNumber"
+                    Style="{ StaticResource lightBlueLabel}"
+                    FontSize="Large"
+                    HorizontalOptions= "Fill"
+                   HorizontalTextAlignment="Start"/>
+            <Label Text="Saldo: 23445 Pontos"
+                   x:Name="CardPoints"
+                   HorizontalTextAlignment="Start"
+                   BackgroundColor="White"
+                   FontSize="Large"/>
+            <Label Text="Os seus vales:"
+                   Style="{ StaticResource lightBlueLabel}"
+                   HorizontalOptions="Fill"
+                   HorizontalTextAlignment="Start"
+                   FontSize="Medium"/>
+            <ListView x:Name="ListV" 
+                      ItemSelected="OnItemSelected"
+                      BackgroundColor="LightSkyBlue"
+                       Margin="0">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Informação}" 
+                                  TextColor="White"  
+                                  Detail="{Binding Valor, StringFormat='€ {0}'}" 
+                                  DetailColor="Green"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

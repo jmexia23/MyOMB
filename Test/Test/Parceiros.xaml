@@ -10,18 +10,12 @@
                    TextColor="White"/>
             <ListView x:Name="listP" ItemSelected="OnItemSelected">
             <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Horizontal" 
-                                         VerticalOptions="Fill">
-                            <Label Text="{Binding Nome}"
-                                        Style="{StaticResource listLabel}"/>
-                            <Label Text="{Binding Descrição, StringFormat='- {0}'}"
-                                   Style="{StaticResource listLabel}"
-                                   FontSize="Small"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nome}"
+                                  TextColor="White"
+                                  Detail="{Binding Descrição}"
+                                   DetailColor="White"/>
+                    </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>

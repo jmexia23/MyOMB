@@ -14,7 +14,12 @@
                 <Setter Property="BackgroundColor" Value="DodgerBlue" />
                 <Setter Property="FontSize" Value="Small"/>
             </Style>
-            
+
+            <Style x:Key="lightBlueLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+            </Style>
+
             <Style x:Key="lightBlueButton" TargetType="Button">
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="BackgroundColor" Value="LightSkyBlue" />
@@ -25,6 +30,7 @@
                 <Setter Property="BackgroundColor" Value="Transparent"/>
                 <Setter Property="BorderColor" Value="Transparent"/>
                 <Setter Property="Margin" Value="0"/>
+                <Setter Property="FontFamily" Value="Lucida Sans Unicode"/>
             </Style>
             <Style x:Key="listLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="White"/>

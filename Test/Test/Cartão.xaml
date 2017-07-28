@@ -2,40 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Test.Cartão">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style x:Key="balanceLabel" TargetType="Label">
-                <Setter Property="FontSize" Value="Large"/>
-                <Setter Property="HorizontalOptions" Value="Center"/>
-            </Style>
-        </ResourceDictionary>
-    
-    </ContentPage.Resources>
-
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="O seu saldo:"
-                   HorizontalOptions="Start"/>
-            <Label   x:Name="cardBalance"
-                     Text="Saldo" 
-                     Style="{StaticResource balanceLabel}"
-                     HorizontalOptions="Center"/>
-            <Label Text="Os seus vales:"
-                   HorizontalOptions="Start"/>
-            <ListView x:Name="Vales">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Padding="5"
-                                         Orientation="Horizontal">
-                                <Label Text="{Binding Entidade}"/>
-                                <Label Text="{Binding Data}"/>
-                                <Label Text="{Binding Valor}"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Adesão ao Cartão OMB"
+                    Style="{ StaticResource blueLabel}"
+                    HorizontalOptions= "Fill"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Nome" />
+            <Entry x:Name="CardName" Placeholder="Insira o seu nome"/>
+            <Label Text="Morada" />
+            <Entry x:Name="CardAdress" Placeholder="Insira a sua morada"/>
+            <Label Text="C.Postal"/>
+            <Entry x:Name="CardZip" Placeholder="código postal"/>
+            <Label Text="Nº Cliente OMB"/>
+            <Entry x:Name="CardClient" Placeholder="nº cliene OMB"/>
+            <Label Text="NIF"/>
+            <Entry x:Name="CardNIF" Placeholder="NIF"/>
+            <Label Text="Nº de telemóvel"/>
+            <Entry x:Name="CardPhone" Placeholder="nº de telemóvel"/>
+            <Button Text="Enviar Pedido"
+                    Style="{StaticResource blueButton}" 
+                    Clicked="PedirCartão_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

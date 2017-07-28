@@ -9,12 +9,17 @@ using Xamarin.Forms.Xaml;
 
 namespace Test
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Consultas : ContentPage
-	{
-		public Consultas ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Consultas : ContentPage
+    {
+        public Consultas()
+        {
+            InitializeComponent();
+        }
+
+        private void Marcar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Marcar());
+        }
+    }
 }

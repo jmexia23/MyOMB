@@ -31,6 +31,11 @@ namespace Test
         {
             Navigation.PushModalAsync(new Parceiros());
         }
+
+        private void Serviços_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Serviços());
+        }
     }
 
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 using Xamarin.Forms;
 
 namespace Test
@@ -13,7 +14,7 @@ namespace Test
 		{
 			InitializeComponent();
 
-			MainPage = new Test.Index();
+			MainPage = new Test.Index2();
 		}
 
 		protected override void OnStart ()

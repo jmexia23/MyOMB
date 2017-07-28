@@ -29,12 +29,12 @@ namespace Test
 
         private void IndexCartao_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Cartão());
+            Navigation.PushModalAsync(new SemCartão());
         }
 
         private void IndexConsultas_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Consultas());
+            Navigation.PushModalAsync(new ConsultasAlt());
         }
 
         private void IndexLojas_Clicked(object sender, EventArgs e)

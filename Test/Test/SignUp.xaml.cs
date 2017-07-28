@@ -20,7 +20,7 @@ namespace Test
         private void Button_Clicked(object sender, EventArgs e)
         {
             DisplayAlert("Sucesso", "Sign Up concluído", "Ok");
-            Navigation.PopModalAsync();
+            Navigation.PushModalAsync(new LogIn());
         }
     }
 }

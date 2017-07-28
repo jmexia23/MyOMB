@@ -3,19 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Test.Consultas">
     <ContentPage.Content>
-        <AbsoluteLayout>
+        <StackLayout>
+            <Label Text="OMB Virtual"
+                    Style="{ StaticResource blueLabel}"
+                    HorizontalOptions= "Fill"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="Cliente Nº: 3456"
+                   x:Name="CardNumber"
+                    Style="{ StaticResource blueLabel}"
+                    FontSize="Large"
+                    HorizontalOptions= "Fill"
+                   HorizontalTextAlignment="Start"/>
             <Button Text="Marcar Consulta"
-                     Style="{StaticResource indexButton}"
-                     HorizontalOptions="Start"
-                    AbsoluteLayout.LayoutBounds="0,.3,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Encomendas"
-                     Style="{StaticResource indexButton}"
-                     HorizontalOptions="Start"
-                    AbsoluteLayout.LayoutBounds="0,.6,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Assistência"
-                     Style="{StaticResource indexButton}"
-                     HorizontalOptions="End"
-                    AbsoluteLayout.LayoutBounds="1,.3,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-        </AbsoluteLayout>
+                    Style="{StaticResource lightBlueButton}"
+                    Clicked="Marcar_Clicked" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

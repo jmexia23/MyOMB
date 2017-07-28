@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.ConsultasAlt">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="OMB Virtual"
+                    Style="{ StaticResource blueLabel}"
+                    HorizontalOptions= "Fill"
+                   HorizontalTextAlignment="Center"/>
+            <Button Text="Associar Cliente"
+                    Style="{StaticResource blueButton}"
+                    Clicked="Associar_Clicked" />
+            <Button Text="Marcar Consulta"
+                    Style="{StaticResource lightBlueButton}"
+                    Clicked="Marcar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

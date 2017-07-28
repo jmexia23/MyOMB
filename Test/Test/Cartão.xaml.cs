@@ -14,8 +14,12 @@ namespace Test
 	{
 		public Cartão ()
 		{
-			InitializeComponent ();
-            Vales.ItemsSource = Data.ProductList;
+            InitializeComponent();
         }
-	}
+
+        private void PedirCartão_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new ComCartão());
+        }
+    }
 }
