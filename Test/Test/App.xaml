@@ -5,8 +5,14 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="blueButton" TargetType="Button">
-              <Setter Property="TextColor" Value="White" />
-              <Setter Property="BackgroundColor" Value="DodgerBlue" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="DodgerBlue" />
+            </Style>
+
+            <Style x:Key="blueLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="DodgerBlue" />
+                <Setter Property="FontSize" Value="Small"/>
             </Style>
             
             <Style x:Key="lightBlueButton" TargetType="Button">
@@ -20,10 +26,10 @@
                 <Setter Property="BorderColor" Value="Transparent"/>
                 <Setter Property="Margin" Value="0"/>
             </Style>
-            <Style x:Key="listButton" TargetType="Button">
+            <Style x:Key="listLabel" TargetType="Label">
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="BackgroundColor" Value="Transparent"/>
-                <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
             </Style>
         </ResourceDictionary>
 

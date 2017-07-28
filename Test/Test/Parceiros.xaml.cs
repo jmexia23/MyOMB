@@ -10,24 +10,25 @@ using Xamarin.Forms.Xaml;
 namespace Test
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Vantagens : ContentPage
+    public partial class Parceiros : ContentPage
     {
-        public Vantagens()
+        public Parceiros()
         {
             InitializeComponent();
-            listV.ItemsSource = IndiceVantagens.ListaV;
+            listP.ItemsSource = IndiceParceiros.ListaP; ;
         }
 
-        private void OnSelected (object sender, SelectedItemChangedEventArgs e)
+        private void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            if(e.SelectedItem != null)
+            if (e.SelectedItem != null)
             {
-                Navigation.PushModalAsync(new PerfilVantagem());
-                
+                Navigation.PushModalAsync(new PerfilParceiro());
+
                 #region DisableSelectionHighlighting
-                ((ListView)sender).SelectedItem=null;
+                ((ListView)sender).SelectedItem = null;
                 #endregion
             }
         }
-    }   
+
+    }
 }

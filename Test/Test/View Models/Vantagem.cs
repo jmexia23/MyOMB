@@ -5,15 +5,15 @@ using System.Collections.ObjectModel;
 
 namespace Test
 {
-    public class Vantagem
+   public class Vantagem
     {
         public string Nome { set; get; }
     }
 
     public class IndiceVantagens
     {
-        #region Lista
-        public static ObservableCollection<Vantagem> Lista = new ObservableCollection<Vantagem>
+        #region ListaV
+        public static ObservableCollection<Vantagem> ListaV = new ObservableCollection<Vantagem>
         {
             new Vantagem{Nome= "Vantagem 1" },
             new Vantagem{Nome= "Vantagem 2" },

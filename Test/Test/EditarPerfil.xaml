@@ -4,15 +4,24 @@
              x:Class="Test.EditarPerfil">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Primeiro Nome" />
-            <Entry x:Name="FirstNameEdit" Placeholder="Insira o seu primeiro nome"/>
-            <Label Text="Último Nome" />
-            <Entry x:Name="LastNameEdit" Placeholder="Insira o seu último nome"/>
-            <Label Text="Username"/>
-            <Entry x:Name="NewUsernameEdit" Placeholder="Insira o seu nº de telemóvel"/>
-            <Label Text="Password"/>
-            <Entry x:Name="NewPasswordEdit" Placeholder="Insira o seu nº de cliente"/>
-            <Button Text="Alterar" Clicked="Alterar_Clicked" BackgroundColor="DodgerBlue" TextColor="White"/>
+            <Label Text="As suas informações"
+                   HorizontalTextAlignment="Center"
+                   Style="{ StaticResource blueLabel}"
+                   FontSize="Large"
+                   HorizontalOptions= "Fill"/>
+            <Label Text="Email" />
+            <Entry x:Name="EmailEdit" Placeholder="Editar email"/>
+            <Label Text="Plavra-passe" />
+            <Entry x:Name="PasswordEdit" Placeholder="Editar palavra-passe"/>
+            <Label Text="Nome"/>
+            <Entry x:Name="NameEdit" Placeholder="Editar nome"/>
+            <Label Text="Nº telemóvel"/>
+            <Entry x:Name="PhoneEdit" Placeholder="Editar nº de telemóvel"/>
+            <Label Text="Nº Cliente OMB"/>
+            <Entry x:Name="ClientEdit" Placeholder="Editar nº de cliente OMB"/>
+            <Label Text="Nº Cartão OMB"/>
+            <Entry x:Name="CardEdit" Placeholder="Editar nº de cartão OMB"/>
+            <Button Text="Alterar" Clicked="Alterar_Clicked" Style="{StaticResource blueButton}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

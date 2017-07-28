@@ -5,13 +5,22 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Username"/>
-            <Entry x:Name="usernameEntry" Placeholder="Insira o seu nº de telemóvel"/>
-            <Label Text="Password"/>
-            <Entry x:Name="Password" Placeholder="Insira o seu nº de cliente" IsPassword="True"/>
-            <Button Text="Login" Clicked="OnLoginClicked" Style="{StaticResource blueButton}" Margin="100"/>
+            <Label Text="Iniciar sesão na sua conta My OMB"
+                   HorizontalTextAlignment="Center"
+                   Style="{ StaticResource blueLabel}"
+                   FontSize="Large"
+                   HorizontalOptions= "Fill"/>
+            <Label Text="Email"/>
+            <Entry x:Name="usernameEntry" Placeholder="Insira o seu email"/>
+            <Label Text="Palavra-passe"/>
+            <Entry x:Name="Password" Placeholder="Insira a sua palavra-passe" IsPassword="True"/>
             <Label x:Name="messageLabel"/>
-            <Button Text="Sign Up" Clicked="OnSignUpClicked" Style="{StaticResource lightBlueButton}" Margin="100"/>
+            <Button Text="Iniciar Sessão" 
+                    Clicked="LogIn_Clicked" 
+                    Style="{StaticResource blueButton}"/>
+            <Button Text="Não tem conta no My OMB?"
+                    Clicked="SignUp_Clicked" 
+                    Style="{StaticResource lightBlueButton}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -21,5 +21,10 @@ namespace Test
         {
             Navigation.PushModalAsync(new EditarPerfil());
         }
+
+        private void Terminar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Index2());
+        }
     }
 }

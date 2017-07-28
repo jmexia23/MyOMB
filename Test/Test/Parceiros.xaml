@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Parceiros">
+    <ContentPage.Content>
+        <StackLayout 
+         BackgroundColor="LightSkyBlue">
+        <Label Text="Vantagens Parceiros" 
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+            <ListView x:Name="listP" ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" 
+                                         VerticalOptions="Fill">
+                            <Label Text="{Binding Nome}"
+                                        Style="{StaticResource listLabel}"/>
+                            <Label Text="{Binding Descrição, StringFormat='- {0}'}"
+                                   Style="{StaticResource listLabel}"
+                                   FontSize="Small"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>

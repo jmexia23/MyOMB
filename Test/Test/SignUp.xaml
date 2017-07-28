@@ -4,14 +4,20 @@
              x:Class="Test.SignUp">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Primeiro Nome" />
-            <Entry x:Name="FirstName" Placeholder="Insira o seu primeiro nome"/>
-            <Label Text="Último Nome" />
-            <Entry x:Name="LastName" Placeholder="Insira o seu último nome"/>
-            <Label Text="Username"/>
-            <Entry x:Name="NewUsername" Placeholder="Insira o seu nº de telemóvel"/>
-            <Label Text="Password"/>
-            <Entry x:Name="NewPassword" Placeholder="Insira o seu nº de cliente"/>
+            <Label Text="Criar a sua Conta OMB"
+                   HorizontalTextAlignment="Center"
+                   Style="{ StaticResource blueLabel}"
+                   FontSize="Large"
+                   HorizontalOptions= "Fill"/>
+            <Label Text="Introduza o seu endereço de e-mail. Depois crie uma palavra-passe e indique o seu nome e telemóvel"/>
+            <Label Text="Email" />
+            <Entry x:Name="NewEmail" Placeholder="Insira o seu email"/>
+            <Label Text="Palavra-passe" />
+            <Entry x:Name="NewPassword" Placeholder="Insira a sua palavra-passe"/>
+            <Label Text="Nome"/>
+            <Entry x:Name="NewName" Placeholder="Insira o seu nome (opiconal)"/>
+            <Label Text="Nº Telemóvel"/>
+            <Entry x:Name="NewPhone" Placeholder="Insira o seu nº de telemóvel (opcional)"/>
             <Button Text="Sign Up" Clicked="Button_Clicked" BackgroundColor="DodgerBlue" TextColor="White"/>
         </StackLayout>
     </ContentPage.Content>

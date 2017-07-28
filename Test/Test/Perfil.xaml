@@ -10,18 +10,36 @@
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
-   
+
     <ContentPage.Content>
         <StackLayout>
-            <Label  Text="Nome:" />
-            <Label   x:Name="profileName" Text="Nome" Style="{StaticResource profileLabels}" />
-            <Label Text="Nº de telemóvel:" />
-            <Label  x:Name="profilePhone" Text="Telemóvel" Style="{StaticResource profileLabels}" />
-            <Label  Text="Nº de cliente:" />
-            <Label   x:Name="profileClient"  Text="Cliente" Style="{StaticResource profileLabels}"/>
-            <Label  Text="Email:" />
-            <Label   x:Name="profileEmail"  Text="email@exemplo.com" Style="{StaticResource profileLabels}"/>
-            <Button Text="Editar" Style="{StaticResource blueButton}" VerticalOptions="End" Clicked="Editar_Clicked"/>
+            <Label Text="As suas informações"
+                   HorizontalTextAlignment="Center"
+                   Style="{ StaticResource blueLabel}"
+                   FontSize="Large"
+                   HorizontalOptions= "Fill"/>
+            <Label Text="Email" />
+            <Label x:Name="profileEmail" Text="nome.apelido@sapo.pt" Style="{StaticResource profileLabels}" />
+            <Label Text="Palavra-passe" />
+            <Label x:Name="profilePassword" Text="xxxxxxxx" Style="{StaticResource profileLabels}" />
+            <Label Text="Nome" />
+            <Label x:Name="profileName"  Text="Nome Apelido" Style="{StaticResource profileLabels}"/>
+            <Label Text="Nº telemóvel" />
+            <Label x:Name="profilePhone"  Text="+999 999 999 999" Style="{StaticResource profileLabels}"/>
+            <Label Text="Nº Cleine OMB" />
+            <Label x:Name="profileClient"  Text="123456" Style="{StaticResource profileLabels}"/>
+            <Label Text="Nº Cartão OMB" />
+            <Label x:Name="profileCard"  Text="2334 3445 4556" Style="{StaticResource profileLabels}"/>
+
+            <Button Text="Editar" 
+                    Style="{StaticResource indexButton}" 
+                    VerticalOptions="End" 
+                    Clicked="Editar_Clicked"/>
+            <Button Text="Terminar Sessão"
+                    Style="{StaticResource indexButton}" 
+                    TextColor="Red" 
+                    VerticalOptions="End"
+                    Clicked="Terminar_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

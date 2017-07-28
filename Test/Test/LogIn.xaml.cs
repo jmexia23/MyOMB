@@ -17,11 +17,11 @@ namespace Test
 			InitializeComponent ();
 		}
 
-        private void OnSignUpClicked(Object sender , EventArgs e)
+        private void SignUp_Clicked(Object sender , EventArgs e)
         {
             Navigation.PushModalAsync(new SignUp());        }
 
-        private void OnLoginClicked(Object sender, EventArgs e)
+        private void LogIn_Clicked(Object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new Index());
         }

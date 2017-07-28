@@ -4,6 +4,11 @@
              x:Class="Test.Lojas">
     <ContentPage.Content>
         <AbsoluteLayout>
+            <Label Text="Mundo OMB"
+                    Style="{ StaticResource blueLabel}"
+                    HorizontalOptions= "Fill"
+                   HorizontalTextAlignment="Center"
+                   AbsoluteLayout.LayoutBounds=".5,0,1,.06" AbsoluteLayout.LayoutFlags="All"/>
             <Button Text="Lojas"
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="Start"
@@ -18,7 +23,8 @@
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="End"
                     AbsoluteLayout.LayoutBounds="1,.3,.5,.1" AbsoluteLayout.LayoutFlags="All"/>
-            <Button Text="Parceiros OMB"
+            <Button Text="Vantagens Parceiros"
+                    Clicked="Parceiros_Clicked"
                      Style="{StaticResource indexButton}"
                      HorizontalOptions="End"
                     AbsoluteLayout.LayoutBounds="1,.6,.5,.1" AbsoluteLayout.LayoutFlags="All"/>

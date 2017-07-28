@@ -8,15 +8,14 @@
             <Label Text="Vantagens OMB" 
                    HorizontalOptions="Center"
                    TextColor="White"/>
-            <ListView x:Name="Lista">
+            <ListView x:Name="listV" ItemSelected="OnSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal"
                                          VerticalOptions="Fill">
-                                <Button Text="{Binding Nome}" 
-                                        Style="{StaticResource listButton}"
-                                        Clicked="Vantagem_Clicked"/>
+                                <Label Text="{Binding Nome}"
+                                        Style="{StaticResource listLabel}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

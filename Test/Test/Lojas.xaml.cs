@@ -26,6 +26,11 @@ namespace Test
         {
             Navigation.PushModalAsync(new Vantagens());
         }
+
+        private void Parceiros_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Parceiros());
+        }
     }
 
 }
